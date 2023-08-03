@@ -1,0 +1,10 @@
+.pixels{font-size: 20px; }
+
+/*percentuale rispetto al font-size del padre*/
+.percentage{font-size: 75%; }
+
+/*5 x [font-size di root]*/
+.rem-value{font-size: 2rem; }
+
+/*5 x [font-size del padre]*/
+.em-value{font-size: 2.5em; }

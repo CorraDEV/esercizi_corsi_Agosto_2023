@@ -1,0 +1,16 @@
+div{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin-top: 40px;
+}
+
+.not-allowed:hover{cursor: not-allowed; }
+
+.help:hover{cursor: help; }
+
+.pointer:hover{cursor: pointer; }
+
+.progress:hover{cursor: progress; }
+
+.wait:hover{cursor: wait; }
