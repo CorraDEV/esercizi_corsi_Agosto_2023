@@ -1,0 +1,13 @@
+p[name]{font-weight: bolder; }
+
+p[name = "primo_paragrafo"]{color: cyan; }
+
+p[name ~= "paragrafo"]{color: brown; }
+
+p[name |= "secondo"]{color: blue; }
+
+p[name ^= "qua"]{color: red; }
+
+p[name $= "grafo"]{border: 3px solid black; }
+
+p[name *= "ondo"]{font-style: italic; }

@@ -1,0 +1,7 @@
+#contenitore p{font-weight: bolder; }
+
+#contenitore > span{color: cyan; }
+
+#contenitore span~p{color: green; }
+
+#contenitore span+p{color: red; }

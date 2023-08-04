@@ -1,0 +1,21 @@
+a:link{
+    color: brown;
+    text-decoration: none;
+}
+
+a:visited{color: green; }
+
+a:hover{
+    color: yellow;
+    text-decoration: underline yellow solid 1px;
+}
+
+a:active{
+    color: red; 
+    text-decoration: underline red solid 1px;
+}
+
+input[type="text"]:focus{
+    outline-style: double;
+    background-color: aquamarine;
+}

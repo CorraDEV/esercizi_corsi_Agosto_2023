@@ -1,0 +1,27 @@
+h1::first-letter{color: orangered; }
+
+p.first_paragraph::first-line{text-transform: uppercase; }
+
+p.last_paragraph::before{
+    content: "1";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; 
+    background: blue;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+
+p.last_paragraph::after{
+    content: "2";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; 
+    background: yellowgreen;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
