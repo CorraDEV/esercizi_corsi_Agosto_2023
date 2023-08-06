@@ -1,0 +1,13 @@
+.inline-block-display{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+.inline-display{display: inline;}
+
+.block-display{
+    display: block;
+    width: 200px;
+    height: 100px;
+}

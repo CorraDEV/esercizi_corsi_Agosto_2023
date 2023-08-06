@@ -1,0 +1,15 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    clear: right;    
+    clip: rect(0px, 100px, 100px, 0px);      
+    position: absolute;
+}
+
+body > span:first-of-type{float: right; }
+
+body > span:last-of-type{
+    float: right; 
+    color:red;    
+}
