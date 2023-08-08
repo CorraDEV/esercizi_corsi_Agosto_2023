@@ -1,0 +1,6 @@
+@font-face{
+    font-family: star_wars;
+    src: url(../fonts/Starjout.ttf); 
+}
+
+h1{font-family: star_wars;}

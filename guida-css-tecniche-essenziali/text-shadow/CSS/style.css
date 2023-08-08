@@ -1,0 +1,6 @@
+p:first-of-type{text-shadow: 2px 2px 2px green; }
+p:last-of-type{
+    text-shadow:    2px 2px 2px brown,
+                    -8px -8px 2px burlywood,
+                    8px 8px 2px silver;
+}
