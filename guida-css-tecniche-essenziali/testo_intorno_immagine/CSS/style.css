@@ -1,0 +1,19 @@
+.colonna{
+    width: 400px;
+    float: left;
+    text-align: justify;
+    margin: 0 20px;    
+}
+
+#spazio_vuoto{
+    height: 463px;
+    width: 319.5px;
+    float: right;
+}
+
+#spazio_immagine{
+    height: 463px;
+    width: 639px;
+    float: left;
+    margin-left: -350px;   
+}

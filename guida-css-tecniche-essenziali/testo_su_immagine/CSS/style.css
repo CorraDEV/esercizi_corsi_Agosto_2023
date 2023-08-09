@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-image: url(../img/immagine.jpg);
+    text-align: center;
+    width: 640px;
+    height: 427px;
+    line-height: 727px;
+    color: white;
+}

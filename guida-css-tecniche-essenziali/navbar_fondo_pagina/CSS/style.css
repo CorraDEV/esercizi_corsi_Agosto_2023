@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    background-color: cyan;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+#navbar{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;    
+    background-color: brown;
+    height: 100%;
+}
+
+#navbar li{
+    display: inline; 
+    line-height: 50px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: white;
+}
