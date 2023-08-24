@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cicli: progetto pratico</title>
+        <style>
+            main {
+                width: 400px;
+                padding: 10px;
+                background-color: red;
+                color: black
+            }
+
+            button {
+                padding: 5px;
+                background-color: yellow;
+                color: black;
+                width: 150px;
+                border-radius: 5px;
+            }
+
+            main form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #selected {
+                margin-top: 20px;
+                background-color: white;
+                height: 20px;
+                padding: 3.5px;
+            }
+
+            #languages {
+                min-height: 200px;
+            }
+        </style>
+    </head>
+    <body>        
+        <main>
+            <form onsubmit="salva(this);return false">
+                <select name="languages" id="languages" multiple>
+
+                </select>
+                <button>SAVE</button>
+            </form>
+            <div id="selected"></div>
+        </main>
+        <script>
+            const languages = ["javascript", "php", "java", "c++", "go"];            
+            const lang = document.getElementById('languages');            
+            if (lang) {
+                for (let i = 0; i < languages.length; i++) {                    
+                    let opt = `<option value="${languages[i]}">${languages[i]}</option>`;                    
+                    lang.innerHTML += opt;
+                }
+            }
+            
+            function salva(f) {                
+                const selected = [];
+                let contEle = 0;                                
+
+                for (let i = 0; i < f.languages.options.length; i++) {                    
+                    if (f.languages.options[i].selected) {
+                        selected[contEle] = f.languages.options[i].value;
+                        contEle++;
+                    }
+                }
+                
+                const div = document.getElementById('selected');
+                div.innerHTML = '';                                
+                
+                for (let i = 0; i < selected.length; i++) {
+                    if(i == selected.length - 1)
+                        div.innerHTML += selected[i];  
+                    else
+                        div.innerHTML += selected[i] + ',';
+                }
+            }
+        </script>
+    </body>
+</html>
