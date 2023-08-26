@@ -13,3 +13,7 @@ function testLowerCase(variabile){
   
     return res;
 }
+
+let parola = 'AlBeRo';
+console.log(testUpperCase(parola));
+console.log(testLowerCase(parola));
