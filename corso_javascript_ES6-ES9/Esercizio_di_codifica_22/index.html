@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio codifica 22</title>
+    <script>                
+        document.addEventListener('DOMContentLoaded',(evt) =>{                            
+                function getById(id){
+                    let ele = document.getElementById(id);
+                    ele.style.width = '15px';                    
+                }    
+                
+                let id = 'widthDiversa';                   
+                getById(id);                
+            }
+        );      
+    </script>
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li id="widthDiversa">item 3</li>
+        <li>item 4</li>
+    </ul>
+</body>
+</html>
