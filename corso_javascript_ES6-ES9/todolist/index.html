@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body class="bg-info">
+    <h1 class="text-center">TODOLIST</h1>
+    <form class="d-flex w-25 mx-auto mb-5 mt-5">
+        <div>
+            <label class="fw-bold fs-5">add todo</label>
+            <input id = "inputTodo" type="text" class="w-50">
+        </div>
+        <button id="addBottone" type="button" class="btn btn-dark w-25">ADD</button>
+    </form>
+    
+    <ul id="lista">
+        
+    </ul>
+    
+    <script>
+        const ul = document.getElementById('lista');        
+        const btn = document.getElementById('addBottone');        
+        let count = 0;
+        btn.addEventListener('click', e => {            
+            const li = document.createElement('li');
+            li.classList.add('d-flex', 'mb-3');
+
+            const p = document.createElement('p');
+            p.setAttribute('id', 'paragrafo'+count);
+            p.classList.add('fw-bold', 'fs-5');
+            p.textContent = document.getElementById('inputTodo').value;
+                        
+            const btnDel = document.createElement('button');            
+            btnDel.textContent = 'delete'; 
+            btnDel.classList.add('btn', 'btn-danger', 'ms-4');
+            btnDel.setAttribute('id', 'btnDel'+count);
+            count++;                        
+            btnDel.addEventListener('click', eliminaTodo); 
+
+            const btnMod = document.createElement('button');            
+            btnMod.textContent = 'modify'; 
+            btnMod.classList.add('btn', 'btn-primary', 'ms-5');
+            btnMod.setAttribute('id', 'btnMod'+count);
+            count++;                        
+            btnMod.addEventListener('click', modificaTodo);             
+            
+            li.appendChild(p);
+            li.appendChild(btnMod);
+            li.appendChild(btnDel);
+            ul.appendChild(li);
+        });                
+        
+        function eliminaTodo(evt){
+            evt.target.parentNode.remove(evt.target);                 
+        }
+        
+        function modificaTodo(evt){
+            let paraModified = evt.target.parentNode.querySelector('p');
+            paraModified.textContent = prompt('inserisci modifica: ');            
+        }
+    </script>
+</body>
+</html>
