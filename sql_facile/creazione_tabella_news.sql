@@ -1,0 +1,9 @@
+CREATE TABLE news(
+	id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	titolo VARCHAR(100) NOT NULL,
+	sottotitolo VARCHAR(50) NOT NULL,
+	testo LONGTEXT NOT NULL,
+	data_pubblicazione DATE NOT NULL,
+	stato TINYINT(1) NOT NULL,
+	PRIMARY KEY(id)
+);
