@@ -1,10 +1,9 @@
-CREATE TABLE dipendenti(
+CREATE TABLE aziende(
 	id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	ragione_sociale VARCHAR(30) NOT NULL,
 	indirizzo VARCHAR(40) NOT NULL,
-	cap INT(5) UNSIGNED NOT NULL,
+	cap VARCHAR(5) NOT NULL,
 	città VARCHAR(20) NOT NULL,
-	provincia VARCHAR(20) NOT NULL,
-	FOREIGN KEY (id_azienda) REFERENCES azienda(id)
+	provincia VARCHAR(20) NOT NULL,	
 	PRIMARY KEY(id)
 );
