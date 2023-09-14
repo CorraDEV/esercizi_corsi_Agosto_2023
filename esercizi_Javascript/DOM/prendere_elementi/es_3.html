@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>                
+        document.addEventListener('DOMContentLoaded', () => {
+            const ele = document.getElementsByTagName('p');
+            
+            for(let i = 0; i < ele.length; i++) 
+                ele[i].classList.add('nuova_classe');                                        
+        });                                
+    </script>
+</head>
+<body>
+    <p class="paragrafo">Esempio1</p>
+    <p class="paragrafo">Esempio2</p>
+    <p class="paragrafo">Esempio3</p>
+    <p class="paragrafo">Esempio4</p>
+</body>
+</html>
