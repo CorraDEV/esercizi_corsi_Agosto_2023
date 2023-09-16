@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>es 10</title>
     <style>
         .redText{
             color: red;
@@ -14,12 +14,8 @@
             const div = document.querySelector('div');
             const allParagraphs = div.children; 
             
-            submitButton.addEventListener('click', (evt) => {                                
-                evt.preventDefault();                
-            
-                for(let p of allParagraphs) 
-                    p.classList.add('redText');                                                           
-            })
+            for(let p of allParagraphs) 
+                p.classList.add('redText');                                                                       
         });                             
     </script>
 </head>
