@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 17</title>   
+    <style>
+        .redText{
+            color: red;
+        }
+    </style>  
+    <script>                
+        document.addEventListener('DOMContentLoaded', () => {            
+            const paragraphs = document.querySelectorAll('p');            
+            
+            for(let p of paragraphs){
+                if(p.textContent.includes('ipsum'))
+                    p.classList.add('redText');
+            }                                        
+        });                             
+    </script>
+</head>
+<body>
+    <div>
+        <p>paragraph 1</p>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>paragraph 3</p>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>paragraph 5</p>
+    </div>    
+</body>
+</html>
