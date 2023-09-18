@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>es 1</title>
+    <title>es 2</title>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const bottone = document.querySelector('button'); 
-            bottone.addEventListener('click', () => {
-                const nome = document.querySelector('#fname');
-                const cognome = document.querySelector('#lname');
-
+            const form = document.querySelector('form'); 
+            const nome = document.querySelector('#fname');
+            const cognome = document.querySelector('#lname');
+            
+            form.addEventListener('submit', (evt) => {
+                evt.preventDefault();
                 console.log(nome.value, cognome.value);
             });
         });
@@ -22,7 +23,7 @@
         <input type="text" id="fname"><br><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname"><br><br>
-        <button type="button">bottone</button>
+        <button type="submit">submit</button>
     </form>    
 </body>
 </html>

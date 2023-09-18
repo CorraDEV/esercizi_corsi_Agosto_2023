@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 1</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const parola = document.querySelector('input[type=text]'); 
+            const previousValue = parola.value;
+            form.addEventListener('submit', (evt) => {
+                evt.preventDefault();
+                const newValue = parola.value;
+                
+                if(newValue === previousValue)                
+                console.log('value has not changed');
+                else
+                    console.log('value has changed: ' + newValue);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <label for="parola">parola:</label><br>
+        <input type="text" id="parola"><br><br>        
+        <button type="submit">submit</button>
+    </form>    
+</body>
+</html>
