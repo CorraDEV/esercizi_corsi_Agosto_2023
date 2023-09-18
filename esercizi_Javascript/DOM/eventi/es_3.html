@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>es 1</title>
+    <title>es 3</title>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const parola = document.querySelector('input[type=text]'); 
-            const previousValue = parola.value;
+            let previousValue = parola.value;
+            const form = document.querySelector('form');
+
             form.addEventListener('submit', (evt) => {
                 evt.preventDefault();
                 const newValue = parola.value;
@@ -16,6 +18,8 @@
                     console.log('value has not changed');
                 else
                     console.log('value has changed: ' + newValue);
+
+                previousValue = newValue;    
             });
         });
     </script>
