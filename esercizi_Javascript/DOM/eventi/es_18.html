@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 18</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const checkbox = document.querySelector("input");
+            checkbox.addEventListener("change", () => {
+                if(checkbox.checked)
+                    console.log('checkbox selezionata');
+                else
+                    console.log('checkbox deselezionata');
+            });
+        });
+    </script>
+</head>
+<body>    
+    <input type="checkbox" id="check" name="check" value="check">
+    <label for="check">check</label><br>
+</body>
+</html>
