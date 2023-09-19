@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 11</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const rangeIn = document.querySelector('input[type=range]');
+            rangeIn.addEventListener('input', () => {
+                console.log('valore del range settato a: '+rangeIn.value);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="range" id="range">        
+</body>
+</html>
