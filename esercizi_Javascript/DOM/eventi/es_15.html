@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 15</title>
+    <script>                
+        document.addEventListener("DOMContentLoaded", () =>{
+            const image = document.querySelector('img');
+            image.addEventListener("load", () => {                
+                console.log('immagine caricata');
+            });
+        });        
+    </script>
+</head>
+<body>     
+    <img src="./img/idea.png" alt="icona_idea">
+</body>
+</html>
