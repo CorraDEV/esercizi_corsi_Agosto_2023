@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 10</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".para");                                                
+            const bottone = document.querySelector('button');
+            bottone.addEventListener("click", () =>{
+                for(let ele of elements)
+                    ele.remove();            
+            });            
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p class="para">paragrafo1</p>
+        <p class="para">paragrafo2</p>
+        <p>paragrafo3</p>
+        <p>paragrafo4</p>
+        <p>paragrafo5</p>
+        <p class="para">paragrafo6</p>
+        <p class="para">paragrafo7</p>
+        <p class="para">paragrafo8</p>
+        <button>Elimina para</button>
+    </div>  
+</body>
+</html>
