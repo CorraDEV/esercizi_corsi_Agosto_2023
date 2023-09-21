@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 8</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabella = document.createElement('table');
+            let content = 1;
+
+            for(let i=0; i < 4; i++){
+                const riga = document.createElement('tr');
+                for(let j=0; j < 4; j++){
+                    const cella = document.createElement('td');
+                    cella.style.border = '1px solid black';
+                    cella.textContent = content;
+                    content++;                    
+                    
+                    riga.appendChild(cella);
+                }
+                tabella.appendChild(riga);
+            }                
+            tabella.style.border = '1px solid black';
+            document.body.appendChild(tabella);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
