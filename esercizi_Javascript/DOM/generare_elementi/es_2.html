@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 2</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const p = document.createElement("p");
+            p.textContent = "contenuto";                        
+            
+            const div = document.createElement("div");
+            div.style.width = "100px";
+            div.style.height = "100px";
+            div.style.backgroundColor = 'red';
+            
+            document.body.appendChild(div);
+            div.appendChild(p);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
