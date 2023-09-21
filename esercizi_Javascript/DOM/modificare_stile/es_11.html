@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 11</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const paras = document.querySelectorAll('.para');
+            
+            for(p of paras)
+                p.style.backgroundColor = 'green';            
+        });
+    </script>
+</head>
+<body>
+    <p class="para">para1</p>
+    <p class="para">para2</p>
+    <p class="para">para3</p>
+    <p>para4</p>
+    <p>para5</p>
+    <p>para6</p>
+</body>
+</html>
