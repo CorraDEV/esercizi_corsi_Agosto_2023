@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 15</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const divs = document.querySelectorAll('.differentDiv');
+            
+            for(div of divs){
+                div.style.border = '4px solid black';
+                div.style.padding = '20px';                
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="differentDiv">div1</div>
+    <div class="differentDiv">div2</div>
+    <div class="differentDiv">div3</div>
+    <div>div4</div>
+    <div>div5</div>
+    <div>div6</div>
+</body>
+</html>
