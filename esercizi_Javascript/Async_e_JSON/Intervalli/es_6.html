@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 6</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bottone = document.createElement('button');
+            bottone.textContent = 'aggiungi +1';
+            
+            const punteggio = document.createElement('span');
+            let counter = 0;
+            punteggio.textContent = counter;
+            
+            document.body.appendChild(punteggio);
+            document.body.appendChild(bottone);                        
+
+            bottone.style.marginLeft = '30px';
+
+            bottone.addEventListener("click", () => {
+                counter++;                    
+            });
+
+            setInterval(() => {
+                punteggio.textContent = counter;
+            }, 1000);                                    
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
