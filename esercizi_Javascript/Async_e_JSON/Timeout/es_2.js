@@ -1,0 +1,1 @@
+setTimeout(() => console.log('messaggio'), 2000);
