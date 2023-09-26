@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es 8</title>
+    <script>
+        function effettuaChiamataAjax(url) {
+            return new Promise(function(resolve, reject) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.onreadystatechange = function () {
+                    if(xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            resolve(xhr.responseText);
+                        } 
+                        else {
+                            reject('Errore nella risposta della richiesta AJAX');
+                        }
+                    }
+                };
+                xhr.send();
+            });
+        }
+  
+        effettuaChiamataAjax('https://jsonplaceholder.typicode.com/posts/1')
+        .then(function(responseData) {
+            console.log('Dati ricevuti:', responseData);
+        })
+        .catch(function(error) {
+            console.error('Errore durante la chiamata AJAX:', error);
+        }); 
+    </script>
+</head>
+<body>
+</body>
+</html>
