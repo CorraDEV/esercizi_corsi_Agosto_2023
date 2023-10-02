@@ -1,0 +1,3 @@
+nome: Riccardo
+cognome: Magnanelli
+età: 32
