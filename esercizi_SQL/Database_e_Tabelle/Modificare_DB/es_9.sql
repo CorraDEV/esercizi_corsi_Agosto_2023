@@ -1,0 +1,2 @@
+CREATE DATABASE Deposito;
+DROP DATABASE Magazzino;

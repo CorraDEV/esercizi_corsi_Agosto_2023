@@ -1,0 +1,2 @@
+CREATE DATABASE Albergo;
+DROP DATABASE Hotel;

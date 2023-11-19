@@ -1,0 +1,2 @@
+CREATE DATABASE Cassa_di_Risparmio;
+DROP DATABASE Banca;

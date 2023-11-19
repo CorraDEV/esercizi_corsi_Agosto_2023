@@ -1,0 +1,2 @@
+CREATE DATABASE Istituto;
+DROP DATABASE Scuola;

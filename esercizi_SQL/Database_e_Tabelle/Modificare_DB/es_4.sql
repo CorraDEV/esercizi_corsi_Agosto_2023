@@ -1,0 +1,2 @@
+CREATE DATABASE Archivio;
+DROP DATABASE Biblioteca;

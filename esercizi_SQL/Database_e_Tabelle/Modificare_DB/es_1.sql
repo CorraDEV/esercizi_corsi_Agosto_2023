@@ -1,0 +1,2 @@
+CREATE DATABASE Supermercato;
+DROP DATABASE Negozio;

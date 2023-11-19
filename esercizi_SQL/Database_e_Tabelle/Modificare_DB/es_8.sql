@@ -1,0 +1,2 @@
+CREATE DATABASE Fitness_Center;
+DROP DATABASE Palestra;

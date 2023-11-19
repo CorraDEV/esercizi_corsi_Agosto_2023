@@ -1,0 +1,2 @@
+CREATE DATABASE Trattoria;
+DROP DATABASE Ristorante;

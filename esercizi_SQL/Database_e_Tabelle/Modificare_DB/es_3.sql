@@ -1,0 +1,2 @@
+CREATE DATABASE Teatro;
+DROP DATABASE Cinema;
