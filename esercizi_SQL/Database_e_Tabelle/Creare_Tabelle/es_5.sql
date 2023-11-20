@@ -1,0 +1,5 @@
+CREATE TABLE Prodotto(
+	id INT PRIMARY KEY,
+    nome VARCHAR(20),
+    prezzo DECIMAL(10,2) NOT NULL
+)

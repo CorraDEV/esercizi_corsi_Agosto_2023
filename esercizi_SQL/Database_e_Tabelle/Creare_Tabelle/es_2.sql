@@ -1,0 +1,5 @@
+CREATE TABLE Libro(
+	ISBN VARCHAR(20) PRIMARY KEY,
+    Titolo VARCHAR(20),
+    Autore VARCHAR(20)  
+)
