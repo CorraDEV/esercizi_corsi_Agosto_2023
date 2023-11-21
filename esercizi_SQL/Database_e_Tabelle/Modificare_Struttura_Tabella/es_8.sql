@@ -1,0 +1,2 @@
+ALTER TABLE Articolo
+MODIFY Contenuto TEXT;
