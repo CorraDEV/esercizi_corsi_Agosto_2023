@@ -1,0 +1,1 @@
+INSERT INTO Libro(isbn, titolo, autore) VALUES('asfa124', 'Promessi Sposi', 'Alessandro Manzoni');

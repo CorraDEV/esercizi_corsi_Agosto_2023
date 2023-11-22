@@ -1,0 +1,1 @@
+INSERT INTO Carrello(id, id_cliente, id_prodotto, quantità) VALUES(1, 1, 1, 2);

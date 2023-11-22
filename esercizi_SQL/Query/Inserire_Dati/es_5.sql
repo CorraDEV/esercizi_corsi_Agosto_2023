@@ -1,0 +1,1 @@
+INSERT INTO Prodotto(id, nome, prezzo) VALUES(1, 'Maglietta', 19.99);

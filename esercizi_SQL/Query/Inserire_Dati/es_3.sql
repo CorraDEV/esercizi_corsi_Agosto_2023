@@ -1,0 +1,1 @@
+INSERT INTO Ordine(id, data, totale) VALUES (1, CURRENT_DATE, 50.99);

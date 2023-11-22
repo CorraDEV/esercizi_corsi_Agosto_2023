@@ -1,0 +1,1 @@
+INSERT INTO Prenotazione(id, id_cliente, id_camera, data_arrivo) VALUES(1, 1, 1, CURRENT_DATE);
