@@ -1,0 +1,2 @@
+DELETE FROM Film
+WHERE durata > 120;
