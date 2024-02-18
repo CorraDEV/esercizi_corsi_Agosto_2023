@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es_9</title>
+    <style>
+        div{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            transition: background-color 2s;
+        }
+
+        div:hover{
+            background-color: red;
+        }
+        
+        div:not(:hover) {
+            transition-delay: 1s;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
